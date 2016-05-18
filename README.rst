@@ -25,8 +25,10 @@ Note:
 Dependencies
 ============
 
--  Python >= 3.0
--  PyGTK
+- Python >= 3.0
+- GTK+3 with Python 3 bindings
+- Webkit for GTK+3
+- Markdown for Python 3
 
 
 .. _install:
@@ -55,11 +57,11 @@ Or, if you have downloaded the Markdown Viewer source code::
 Windows
 -------
 
-Note:
-
-    The following installation procedure has been tested to work with Python
-    3.4 under Windows 7.
-    It should also work with recent Windows systems.
+.. Note:
+.. 
+..     The following installation procedure has been tested to work with Python
+..     3.4 under Windows 7.
+..     It should also work with recent Windows systems.
 
 You can install, upgrade, uninstall Markdown Viewer with these commands (in a
 `command prompt`_)::
@@ -78,8 +80,8 @@ MacOSX
 Note:
 
     The following installation procedure has been tested to work with Python
-    3.4 under MacOSX 10.6 (*Snow Leopard*).
-    It should also work with recent MacOSX systems.
+    3.5 under MacOSX 10.9 (*Mavericks*).
+    It should also work with more recent MacOSX systems.
 
 You can install, upgrade, uninstall Markdown Viewer with these commands (in a
 terminal)::
@@ -91,6 +93,20 @@ terminal)::
 Or, if you have downloaded the Markdown Viewer source code::
 
     python3 setup.py install
+
+Markdown Viewer requires GTK+3 and its Python 3 bindings plus few additional
+libraries to run.
+These dependencies can be installed using MacPorts::
+
+    port install gtk3
+    port install py35-gobject3
+    port install webkit-gtk3
+    port install py35-markdown
+
+.. or with Hombrew::
+.. 
+..     brew install gtk+3
+..     brew install pygobject3
 
 
 Bug reports
