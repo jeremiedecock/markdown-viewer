@@ -68,7 +68,8 @@ PACKAGES = ['mdviewer']
 INSTALL_REQUIRES = []
 
 
-SCRIPTS = ["mdviewer/viewer"]
+#SCRIPTS = ["mdviewer/viewer"]
+SCRIPTS = []
 
 
 # Entry point can be used to create plugins or to automatically generate
